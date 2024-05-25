@@ -22,7 +22,7 @@ public class Usuario {
     private Long id_usuario;
     private String full_name_usuario;
     private String telefono;
-    private LocalDate fecha_registro;
+    private String fecha_registro;
     @OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL)
     private List<Ingreso> ingreso;
 }

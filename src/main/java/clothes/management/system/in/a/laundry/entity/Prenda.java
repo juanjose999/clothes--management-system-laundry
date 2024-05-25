@@ -1,5 +1,6 @@
 package clothes.management.system.in.a.laundry.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -20,5 +21,6 @@ public class Prenda {
     private int cantidad;
     @ManyToOne
     @JoinColumn(name = "ingreso_id")
+    @JsonIgnore
     private Ingreso ingreso;
 }

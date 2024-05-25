@@ -20,15 +20,10 @@ public class Ingreso {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id_ingreso;
-    private LocalDate fecha_ingreso;
+    private String fecha_ingreso;
     @OneToOne
     private Usuario usuario;
     @OneToMany(mappedBy = "ingreso", cascade = CascadeType.ALL)
     private List<Prenda> prendaList;
 
-    public Ingreso(LocalDate fecha_ingreso, Usuario usuario) {
-        this.fecha_ingreso = LocalDate.now();
-        this.usuario = usuario;
-        this.prendaList =new ArrayList<>();
-    }
 }
