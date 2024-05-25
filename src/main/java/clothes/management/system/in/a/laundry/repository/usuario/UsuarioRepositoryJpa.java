@@ -1,4 +1,4 @@
-package clothes.management.system.in.a.laundry.repository;
+package clothes.management.system.in.a.laundry.repository.usuario;
 
 import clothes.management.system.in.a.laundry.entity.Usuario;
 import org.springframework.data.jpa.repository.JpaRepository;
